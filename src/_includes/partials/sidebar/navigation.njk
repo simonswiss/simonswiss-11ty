@@ -1,0 +1,18 @@
+{% macro nav_link(href, text) %}
+  <li class="mb-1 inline-block lg:block mr-4 sm:mr-5 lg:mr-0">
+    <a
+      href="{{ href }}"
+      class="text-purple-500 no-underline inline-block border-b-2 border-transparent lg:text-lg"
+      activeStyle="text-purple-800 border-purple-600"
+    >
+      {{ text }}
+    </a>
+  </li>
+{% endmacro %}
+
+<ul class="list-none p-0 mb-6">
+  {{ nav_link('/', 'Blog') }}
+  {{ nav_link('/talks', 'Talks') }}
+  {{ nav_link('/about', 'About') }}
+  {{ nav_link('/contact', 'Contact') }}
+</ul>
