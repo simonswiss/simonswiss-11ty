@@ -1,18 +1,9 @@
 ---
-tags: post
 title: "Full Re-write in 10 Days With Tachyons and Functional CSS: A Case Study"
 path: "full-re-write-in-10-days-with-tachyons-and-functional-css"
 postdate: "2017-02-28"
 intro: "A 4-post series taking you through a website refactoring process using tachyons, a functional CSS toolkit that is guaranteed to trigger very strong opinions [insert Dave Rupert’s hot drama soundboard effect]."
 ---
-
-import IntroText from 'components/intro-text'
-
-<IntroText>
-  A 4-post series taking you through a website refactoring process using
-  tachyons, a functional CSS toolkit that is guaranteed to trigger very strong
-  opinions [insert Dave Rupert’s hot drama soundboard effect].
-</IntroText>
 
 The series is available on medium, and here are links to the four chapters.
 

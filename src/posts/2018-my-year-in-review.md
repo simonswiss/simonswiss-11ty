@@ -1,23 +1,10 @@
 ---
-tags: post
 title: "2018: My Year in Review"
 path: "2018-my-year-in-review"
 postdate: "2018-12-27"
-intro:
-  "My year 2017 had finished with a talk at SydCSS that got very positive feedback. I was amped up and full of ambition for the
+intro: "My year 2017 had finished with a talk at SydCSS that got very positive feedback. I was amped up and full of ambition for the
   year 2018. How did it stack up?"
 ---
-
-import { Link } from 'gatsby';
-import IntroText from 'components/intro-text';
-import { Image, Tweet } from 'components/long-form';
-
-<IntroText>
-  2017 had finished with a{' '}
-  <Link to="/talks/sydcss-utility-first-css-all-the-rage">talk at SydCSS</Link>{' '}
-  that got very positive feedback. I was amped up and full of ambition for the
-  year 2018. How did it stack up?
-</IntroText>
 
 ## Starting with a bang 💥
 
@@ -65,15 +52,11 @@ Slack buddies, twitter buddies, but no IRL buddies.
 
 Oh and my close friend, mentor, colleague, and the reason I submitted the talk in the first place: Andrew Welch.
 
-<Image
-src="assets/images/dotall.png"
-alt="Wardrobe recording booth"
-caption={`So, ummm.. I stepped on stage at an international conference and I nailed it! 😎`}
-/>
+{% image "/img/dotall.png", "Wardrobe recording booth", "So, ummm.. I stepped on stage at an international conference and I nailed it! 😎" %}
 
 I had a blast! The conference was superb. Such a welcoming and interesting community. Everyone knows each other from Slack, but mingling in person was awesome.
 
-Uumm.. so <Link to="/talks/real-life-journey-utility-first-css">my talk</Link> was scheduled
+Uumm.. so [my talk](/talks/real-life-journey-utility-first-css) was scheduled
 to close day 1 of the conference. Sort of a mini keynote! :) It went extremely well
 and the discussions it sparked showed my presentation definitely hit a nerve.
 
@@ -113,11 +96,7 @@ We get in their heads and grind them out. And we're the league champs! 💪
 
 Love this team. As long as I live in Sydney, I'll be playing with them! Years go by and I get slower, but I can still drain threes like there's no tomorrow! 👌
 
-<Image
-src="assets/images/league-title.jpg"
-alt="Rec league 2018 champions!"
-caption={`Grand final champions! Ok ok, rec league div 3, but still! 😎`}
-/>
+{% image "/img/bball-champs.jpeg", "Rec league 2018 champions!", "Grand final champions! Ok ok, rec league div 3, but still! 😎" %}
 
 ## Landed a new job 🙌
 

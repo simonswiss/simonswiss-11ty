@@ -1,7 +1,7 @@
 ---
 title: Contact
 intro: "Intro snippet maybe"
-layout: layout/page.njk
+layout: layout/list.html
 ---
 
 # Let's have a chat!

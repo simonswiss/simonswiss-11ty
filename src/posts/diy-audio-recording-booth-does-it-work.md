@@ -1,22 +1,9 @@
 ---
-tags: post
 title: "DIY Audio Recording Booth - Does it Work?"
 path: "diy-audio-recording-booth-does-it-work"
 postdate: "2016-05-13"
-intro: "You may have read my article about making a questionable recording booth out of my towel rack. While it was fun and all, I quickly realised it would not be a viable long term solution, especially for doing live coding videos."
+intro: "You may have read my article about making <a href='/posts/my-very-first-screencast-taking-the-leap'>a questionable recording booth out of my towel rack</a>. While it was fun and all, I quickly realised it would not be a viable long term solution, especially for doing live coding videos."
 ---
-
-import IntroText from 'components/intro-text'
-import { Link } from 'gatsby'
-
-<IntroText>
-  You may have read my article about making{' '}
-  <Link to="/posts/my-very-first-screencast-taking-the-leap">
-    a questionable recording booth out of my towel rack
-  </Link>
-  . While it was fun and all, I quickly realised it would not be a viable long term
-  solution, especially for doing live coding videos.
-</IntroText>
 
 I decided to create my own DIY recording booth, after watching a couple of convincing Youtube videos.
 

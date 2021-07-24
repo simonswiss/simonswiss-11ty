@@ -1,0 +1,23 @@
+---
+layout: "layout/base.html"
+---
+
+<div class="min-h-screen grid grid-cols-[400px,1fr]">
+  <!-- Sidebar -->
+  <div class="bg-gray-50 p-8 flex flex-col items-center h-full">
+    <a href="/">
+      <img src="/img/avocado.jpg" class="w-40 h-40 object-cover rounded-full" alt="" />
+    </a>
+    <p class="mt-6 text-3xl font-hand font-bold">simonswiss</p>
+
+    <nav class="flex-1 mt-24 flex flex-col items-center space-y-8">
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/articles">Articles</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/talks">Talks</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/screencasts">Screencasts</a>
+    </nav>
+    <footer>
+      <p>Built with <a href="#">11ty</a> and <a href="#">Tailwind CSS</a></p>
+    </footer>
+  </div>
+  <main>{{ content | safe }}</main>
+</div>

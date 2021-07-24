@@ -1,7 +1,7 @@
 ---
-title: Welcome to matter!
+title: About me!
 intro: "Intro snippet maybe"
-layout: layout/page.njk
+layout: layout/list.html
 ---
 
 # Nice to meet you!

@@ -1,19 +1,9 @@
 ---
-tags: post
-title: 'My Very First Screencast: Taking The Leap.'
-path: 'my-very-first-screencast-taking-the-leap'
-postdate: '2016-05-03'
+title: "My Very First Screencast: Taking The Leap."
+path: "my-very-first-screencast-taking-the-leap"
+postdate: "2016-05-03"
 intro: I am a self-taught front-end developer. I owe a large portion of what I know to some incredible individuals who took the time to create video tutorials — paid or free — and make them available to the world.
 ---
-
-import IntroText from 'components/intro-text'
-import { Image, YouTube } from 'components/long-form'
-
-<IntroText>
-  I am a self-taught front-end developer. I owe a large portion of what I know
-  to some incredible individuals who took the time to create video tutorials —
-  paid or free — and make them available to the world.
-</IntroText>
 
 Before working in front-end, I was a primary school teacher. I always loved teaching, and still very much enjoy doing code mentoring with colleagues and clients.
 
@@ -74,9 +64,9 @@ I don’t have a proper wardrobe anymore, but I got a mean towel rack that, enha
 Here’s what it looked like. Yes, I zipped the two hoodies together to the top and ducked my head under there.
 
 <Image
-  src="assets/images/wardrobe-booth.jpg"
-  alt="Wardrobe recording booth"
-  caption={`The dodgy, "don't try this at home" recording booth.`}
+src="assets/images/wardrobe-booth.jpg"
+alt="Wardrobe recording booth"
+caption={`The dodgy, "don't try this at home" recording booth.`}
 />
 
 I received some good feedback on this setup, and some people shared similar stories of coming up with random pillows / curtains / clothes to scare the echo away.

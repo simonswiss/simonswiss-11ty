@@ -1,0 +1,16 @@
+---
+layout: 'layout/new.html'
+---
+
+<div class="bg-gradient-to-r from-white to-indigo-400 h-screen overflow-y-auto border-l px-24">
+  <img src="/img/avocado.jpg" class="fixed inset-0 w-full h-full object-cover mix-blend-overlay opacity-20 blur-md pointer-events-none"></img>
+  <article class="max-w-5xl mx-auto px-8 mt-16 mb-32">
+    <div class="inline-block mt-16 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">
+      <h1 class="text-transparent text-5xl font-black font-hand">{{ title }}</h1>
+    </div>
+    <p class="mt-12 text-2xl intro-text">{{ intro | safe }}</p>
+    <div class="isolate mt-12 prose xl:prose-xl mx-auto bg-white/40 backdrop-lg p-12 rounded-xl shadow-xl">
+      {{ content | safe }}
+    </div>
+  </article>
+</div>

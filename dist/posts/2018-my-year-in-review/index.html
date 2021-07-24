@@ -1,22 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-      <p>import { Link } from 'gatsby';
-import IntroText from 'components/intro-text';
-import { Image, Tweet } from 'components/long-form';</p>
-<IntroText>
-  2017 had finished with a{' '}
-  <Link to="/talks/sydcss-utility-first-css-all-the-rage">talk at SydCSS</Link>{' '}
-  that got very positive feedback. I was amped up and full of ambition for the
-  year 2018. How did it stack up?
-</IntroText>
-<h2>Starting with a bang 💥</h2>
+    
+<div class="min-h-screen grid grid-cols-[400px,1fr]">
+  <!-- Sidebar -->
+  <div class="bg-gray-50 p-8 flex flex-col items-center h-full">
+    <a href="/">
+      <img src="/img/avocado.jpg" class="w-40 h-40 object-cover rounded-full" alt="" />
+    </a>
+    <p class="mt-6 text-3xl font-hand font-bold">simonswiss</p>
+
+    <nav class="flex-1 mt-24 flex flex-col items-center space-y-8">
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/articles">Articles</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/talks">Talks</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/screencasts">Screencasts</a>
+    </nav>
+    <footer>
+      <p>Built with <a href="#">11ty</a> and <a href="#">Tailwind CSS</a></p>
+    </footer>
+  </div>
+  <main>
+<div class="bg-gradient-to-r from-white to-indigo-400 h-screen overflow-y-auto border-l px-24">
+  <img src="/img/avocado.jpg" class="fixed inset-0 w-full h-full object-cover mix-blend-overlay opacity-20 blur-md pointer-events-none"></img>
+  <article class="max-w-5xl mx-auto px-8 mt-16 mb-32">
+    <div class="inline-block mt-16 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">
+      <h1 class="text-transparent text-5xl font-black font-hand">2018: My Year in Review</h1>
+    </div>
+    <p class="mt-12 text-2xl intro-text">My year 2017 had finished with a talk at SydCSS that got very positive feedback. I was amped up and full of ambition for the year 2018. How did it stack up?</p>
+    <div class="isolate mt-12 prose xl:prose-xl mx-auto bg-white/40 backdrop-lg p-12 rounded-xl shadow-xl">
+      <h2>Starting with a bang 💥</h2>
 <p>New Year resolutions are fun. Most of the time, they're out the window within a few weeks.</p>
 <p>In this case, one thing I <strong>really</strong> wanted to do was to produce an <a href="https://egghead.io">egghead.io</a> course on <a href="https://tailwindcss.com">TailwindCSS</a>.</p>
 <p>The sooner the better. I committed early, and within the first two weeks of the year, I was done. My course was in queue for publishing.</p>
@@ -39,13 +60,10 @@ import { Image, Tweet } from 'components/long-form';</p>
 <p>The CraftCMS community is special. It's truly something else. I couldn't wait to catch up with all these people I consider friends but have never met in real life.</p>
 <p>Slack buddies, twitter buddies, but no IRL buddies.</p>
 <p>Oh and my close friend, mentor, colleague, and the reason I submitted the talk in the first place: Andrew Welch.</p>
-<p>&lt;Image
-src=&quot;assets/images/dotall.png&quot;
-alt=&quot;Wardrobe recording booth&quot;
-caption={<code>So, ummm.. I stepped on stage at an international conference and I nailed it! 😎</code>}
-/&gt;</p>
+<img class="shadow-xl rounded-md" src="/img/dotall.png" alt="Wardrobe recording booth" />
+<p class="text-sm text-gray-500 italic font-serif">So, ummm.. I stepped on stage at an international conference and I nailed it! 😎</p>
 <p>I had a blast! The conference was superb. Such a welcoming and interesting community. Everyone knows each other from Slack, but mingling in person was awesome.</p>
-<p>Uumm.. so <Link to="/talks/real-life-journey-utility-first-css">my talk</Link> was scheduled
+<p>Uumm.. so <a href="/talks/real-life-journey-utility-first-css">my talk</a> was scheduled
 to close day 1 of the conference. Sort of a mini keynote! :) It went extremely well
 and the discussions it sparked showed my presentation definitely hit a nerve.</p>
 <p>These few days in Berlin are a sure highlight of my year!</p>
@@ -66,18 +84,20 @@ and the discussions it sparked showed my presentation definitely hit a nerve.</p
 <p>The team is awesome. We're almost all dads. At 37, I am one of the youngest players on the team. But we whooped a bunch of athletic teams in their early 20s.</p>
 <p>We get in their heads and grind them out. And we're the league champs! 💪</p>
 <p>Love this team. As long as I live in Sydney, I'll be playing with them! Years go by and I get slower, but I can still drain threes like there's no tomorrow! 👌</p>
-<p>&lt;Image
-src=&quot;assets/images/league-title.jpg&quot;
-alt=&quot;Rec league 2018 champions!&quot;
-caption={<code>Grand final champions! Ok ok, rec league div 3, but still! 😎</code>}
-/&gt;</p>
+<img class="shadow-xl rounded-md" src="/img/bball-champs.jpeg" alt="Rec league 2018 champions!" />
+<p class="text-sm text-gray-500 italic font-serif">Grand final champions! Ok ok, rec league div 3, but still! 😎</p>
 <h2>Landed a new job 🙌</h2>
 <p>To wrap things up - I have some exciting news: I will be joining the <a href="https://thinkmill.com.au">Thinkmill</a> in January 2019.</p>
 <p>This should be really exciting, very much looking forward to this new chapter!</p>
 <h2>Wrapping it up</h2>
 <p>I am pretty pleased with myself and what I have accomplished in 2018. I am now wrapping up the year with my little family on a camping trip.</p>
 <p>See you all in 2019! ❤️</p>
-    
-      
+
+    </div>
+  </article>
+</div>
+</main>
+</div>
+ 
   </body>
 </html>

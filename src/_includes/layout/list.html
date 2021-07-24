@@ -1,0 +1,14 @@
+---
+layout: "layout/new.html"
+title: Placeholder
+---
+
+<div class="bg-gradient-to-r from-white to-indigo-400 h-screen overflow-y-auto border-l px-24">
+  <img src="/img/avocado.jpg" class="fixed inset-0 w-full h-full object-cover mix-blend-overlay opacity-20 blur-md pointer-events-none"></img>
+  <div class="inline-block mt-16 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">
+    <h1 class="text-transparent text-9xl font-black">{{ title }}</h1>
+  </div>
+  <ul class="mt-16 grid grid-cols-[repeat(auto-fill,minmax(28rem,1fr))] gap-24">
+    {{ content | safe }}
+  </ul>
+</div>

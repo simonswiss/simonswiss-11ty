@@ -1,11 +1,11 @@
 {
-  "name": "tailwind-alpine-components",
+  "name": "simonswiss-with-11ty",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel watch:css watch:html",
-    "watch:css": "postcss src/_includes/tailwind/tailwind.css -o src/css/styles.css --watch",
+    "dev": "npm-run-all --parallel watch:*",
+    "watch:css": "tailwindcss -i src/css/styles.css -o dist/css/styles.css -w",
     "watch:html": "rm -rf dist && npx @11ty/eleventy --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,13 +13,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/typography": "^0.2.0",
     "alpinejs": "^2.3.3",
-    "tailwindcss": "^1.4.4"
+    "autoprefixer": "^10.3.1",
+    "date-fns": "^2.23.0",
+    "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.1"
+    "npm-run-all": "^4.1.5"
   }
 }

@@ -1,0 +1,6 @@
+---
+layout: "layout/list.html"
+title: Screencasts
+---
+
+{% for post in collections.screencasts %} {% teaser post.data.title, post.data.postdate, post.data.intro, post.url %} {% endfor %}

@@ -1,0 +1,6 @@
+---
+layout: "layout/list.html"
+title: Articles
+---
+
+{% for post in collections.posts %} {% teaser post.data.title, post.data.postdate, post.data.intro, post.url %} {% endfor %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    
+<div class="min-h-screen grid grid-cols-[400px,1fr]">
+  <!-- Sidebar -->
+  <div class="bg-gray-50 p-8 flex flex-col items-center h-full">
+    <a href="/">
+      <img src="/img/avocado.jpg" class="w-40 h-40 object-cover rounded-full" alt="" />
+    </a>
+    <p class="mt-6 text-3xl font-hand font-bold">simonswiss</p>
+
+    <nav class="flex-1 mt-24 flex flex-col items-center space-y-8">
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/articles">Articles</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/talks">Talks</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/screencasts">Screencasts</a>
+    </nav>
+    <footer>
+      <p>Built with <a href="#">11ty</a> and <a href="#">Tailwind CSS</a></p>
+    </footer>
+  </div>
+  <main>
+<div class="bg-gradient-to-r from-white to-indigo-400 h-screen overflow-y-auto border-l px-24">
+  <img src="/img/avocado.jpg" class="fixed inset-0 w-full h-full object-cover mix-blend-overlay opacity-20 blur-md pointer-events-none"></img>
+  <div class="inline-block mt-16 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">
+    <h1 class="text-transparent text-9xl font-black">Screencasts</h1>
+  </div>
+  <ul class="mt-16 grid grid-cols-[repeat(auto-fill,minmax(28rem,1fr))] gap-24">
+    
+ 
+<li class="max-w-3xl">
+  <p class="uppercase tracking-wider text-sm xl:text-base text-gray-500">
+    December 2017
+  </p>
+  <h2 class="leading-tight mt-1 font-black text-2xl text-indigo-900 font-hand lg:text-3xl">
+    <a href="/talks/real-life-utility-first-css/" class="no-underline hover:underline">
+      SydCSS: “Utility-First CSS: What’s All The Rage?”
+    </a>
+  </h2>
+  <p class="mt-0 text-gray-900 xl:mt-5 mb-4 lg:text-lg">Closing the final SydCSS meetup for 2017 with a triggering topic: utility-first CSS.</p>
+  <a href="/talks/real-life-utility-first-css/" class="text-indigo-600 font-bold font-hand lg:text-lg">
+    Read more &rarr;
+  </a>
+</li>
+     
+
+  </ul>
+</div>
+</main>
+</div>
+ 
+  </body>
+</html>

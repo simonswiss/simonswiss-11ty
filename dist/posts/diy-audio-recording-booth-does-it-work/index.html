@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-      <p>import IntroText from 'components/intro-text'
-import { Link } from 'gatsby'</p>
-<IntroText>
-  You may have read my article about making{' '}
-  <Link to="/posts/my-very-first-screencast-taking-the-leap">
-    a questionable recording booth out of my towel rack
-  </Link>
-  . While it was fun and all, I quickly realised it would not be a viable long term
-  solution, especially for doing live coding videos.
-</IntroText>
-<p>I decided to create my own DIY recording booth, after watching a couple of convincing Youtube videos.</p>
-<p>If you want to see how it turned out - I invite you to <a href="https://medium.com/@simonswiss/low-budget-dyi-audio-recording-booth-does-it-work-e861a6d99a4d">read this Medium post</a>!</p>
     
-      
+<div class="min-h-screen grid grid-cols-[400px,1fr]">
+  <!-- Sidebar -->
+  <div class="bg-gray-50 p-8 flex flex-col items-center h-full">
+    <a href="/">
+      <img src="/img/avocado.jpg" class="w-40 h-40 object-cover rounded-full" alt="" />
+    </a>
+    <p class="mt-6 text-3xl font-hand font-bold">simonswiss</p>
+
+    <nav class="flex-1 mt-24 flex flex-col items-center space-y-8">
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/articles">Articles</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/talks">Talks</a>
+      <a class="text-gray-500 text-xl font-bold uppercase tracking-widest" href="/screencasts">Screencasts</a>
+    </nav>
+    <footer>
+      <p>Built with <a href="#">11ty</a> and <a href="#">Tailwind CSS</a></p>
+    </footer>
+  </div>
+  <main>
+<div class="bg-gradient-to-r from-white to-indigo-400 h-screen overflow-y-auto border-l px-24">
+  <img src="/img/avocado.jpg" class="fixed inset-0 w-full h-full object-cover mix-blend-overlay opacity-20 blur-md pointer-events-none"></img>
+  <article class="max-w-5xl mx-auto px-8 mt-16 mb-32">
+    <div class="inline-block mt-16 bg-gradient-to-r from-indigo-600 to-pink-500 bg-clip-text">
+      <h1 class="text-transparent text-5xl font-black font-hand">DIY Audio Recording Booth - Does it Work?</h1>
+    </div>
+    <p class="mt-12 text-2xl intro-text">You may have read my article about making <a href='/posts/my-very-first-screencast-taking-the-leap'>a questionable recording booth out of my towel rack</a>. While it was fun and all, I quickly realised it would not be a viable long term solution, especially for doing live coding videos.</p>
+    <div class="isolate mt-12 prose xl:prose-xl mx-auto bg-white/40 backdrop-lg p-12 rounded-xl shadow-xl">
+      <p>I decided to create my own DIY recording booth, after watching a couple of convincing Youtube videos.</p>
+<p>If you want to see how it turned out - I invite you to <a href="https://medium.com/@simonswiss/low-budget-dyi-audio-recording-booth-does-it-work-e861a6d99a4d">read this Medium post</a>!</p>
+
+    </div>
+  </article>
+</div>
+</main>
+</div>
+ 
   </body>
 </html>

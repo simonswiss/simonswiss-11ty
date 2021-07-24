@@ -1,8 +1,13 @@
 module.exports = {
-  purge: [],
+  mode: "jit",
+  purge: ["src/**/*.{html,md}", ".eleventy.js"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        hand: "'Mali', cursive",
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
